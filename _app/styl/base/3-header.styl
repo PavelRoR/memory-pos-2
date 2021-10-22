@@ -2,19 +2,41 @@ header
 	overflow hidden
 	padding 20px 0
 	margin-bottom: 40px
+	@media screen and (max-width 560px)
+		padding 15px 0
+		margin-bottom: 20px
 .header-logo
 	float left
+	img
+		width 100%
+	@media screen and (max-width 560px)
+		display block
+		float: none
+		margin 0 auto 5px
+		width 70px
 .contacts
 	float: right
 	text-align right
+	width 280px
+	display table
+	@media screen and (max-width 560px)
+		float: none
+		text-align center
+		margin 0 auto
+		width 220px
 .contact
-	line-height: 42px
+	line-height: 28px
 	font-size: 16px
-	&-skype
-		margin 0 20px
+	color #000
+	display table-cell
+	@media screen and (max-width 560px)
+		line-height: 1
+		font-size: 12px
+	// &-tel
+	// 	margin 0 20px
 	&:focus
 		text-decoration none
-		color 
+		color #000
 	&:hover
 		text-decoration underline
-		color 
+		color #000

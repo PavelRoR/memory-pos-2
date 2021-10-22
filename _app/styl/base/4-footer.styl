@@ -6,10 +6,14 @@ footer
 	h5
 		font-size: 20px;
 		margin 0
-		font-family: 
 		font-weight: bold
 	p
 		line-height: 1.3
+	@media screen and (max-width 560px)
+		padding 10px 0
+		font-size: 12px
+		h5
+			font-size: 18px
 .conditions
 	color #000
 	text-decoration: underline
@@ -27,9 +31,11 @@ footer
 		margin: 15px 7px 10px
 		width: 29px;
 		height: 29px;
-		background-image url(../img/icons/soc-buttons.png)
+		background-image url(../img/icons/soc-buttons.jpg)
 		background-repeat no-repeat
 		transition all .3s ease
+		@media screen and (max-width 560px)
+			margin 10px 5px
 		&:hover
 			opacity .9
 			transform: translateY(-3px)
@@ -43,5 +49,3 @@ footer
 			background-position: -87px 0
 		&:nth-of-type(5)
 			background-position: -116px 0
-		&:nth-of-type(6)
-			background-position: -145px 0
