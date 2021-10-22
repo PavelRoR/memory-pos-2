@@ -1,0 +1,30 @@
+-var path = '';
+-var head_url = 'https://isakov.mastervision.su/memory-capabilities-2/';
+-var head_title = '«Возможности памяти. Прокачайте свою память с помощью простых техник»';
+-var head_description = 'БЕСПЛАТНЫЙ 2-дневный онлайн-мастер-класс Ильи Исакова';
+-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libsJs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.js';
+-var noref = true;
+-var action = '';
+-var group = '';
+-var formId = '';
+-var formVc = '';
+-var ah = true;
+-var ak = true;
+//- -var footer_title = true;
+//- -var oferta = 'https://mastervision.su/oferta.docx';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
