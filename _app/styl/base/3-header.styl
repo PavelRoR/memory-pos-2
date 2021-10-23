@@ -8,16 +8,23 @@ header
 .header-logo
 	float left
 	margin-top: 6px
-	@media screen and (max-width 560px)
+	@media screen and (max-width 991px)
 		display block
 		float: none
 		margin 0 auto 5px
-		width 70px
+		width 270px
+	@media screen and (max-width 560px)
+		width 170px
 .contacts
 	float: right
 	// line-height: 28px
-	@media screen and (max-width 560px)
+	@media screen and (max-width 991px)
 		float: none
+		margin-top: 10px
+	@media screen and (max-width 560px)
+		text-align center
+	@media screen and (max-width 386px)
+		margin-top: 0
 .contact
 	margin-left: 50px
 	font-size: 14px
@@ -27,6 +34,7 @@ header
 	color #000
 	display inline-block
 	line-height: 19px
+	text-align: left
 	&.contact-tel
 		padding-left: 25px
 		background-image: url(../img/icons/tube.png)
@@ -43,3 +51,16 @@ header
 		&:hover
 			text-decoration underline
 			color #000
+	@media screen and (max-width 991px)
+		margin 0 10px
+	@media screen and (max-width 560px)
+		font-size: 12px
+		line-height: 15px
+		margin 5px 0 0
+		&.contact-tel
+		&.contact-email
+			padding-left 25px
+			background-size: 17px
+		a
+			font-size: 14px
+			width 132px

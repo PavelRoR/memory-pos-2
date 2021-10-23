@@ -1,0 +1,39 @@
+-var path = '../';
+-var head_url = 'https://isakov.mastervision.su/memory-capabilities-2/promo/';
+-var head_title = 'Благодарим Вас за регистрацию на наш мастер-класс';
+-var head_description = 'У нас к Вам просьба, прямо сейчас подпишитесь на наш телеграм, там мы отправим Вам видео-урок';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+//-var libsJs = path+'js/libs.min.js';
+//-var scripts = path+'js/scripts.js';
+-var noref = true;
+//-var action = '';
+//-var group = '';
+//-var formId = '';
+//-var formVc = '';
+-var ah = true;
+-var ak = true;
+//-var href = '#Modal';
+-var footer_title = true;
+//- -var oferta = 'https://mastervision.su/oferta.docx';
+
+mixin b(cl, href, p, target, id)
+	a.button(class=cl href!=href target=target id=id)=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)=h3
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/promo/1-main
+		include pug/base/2-footer
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
