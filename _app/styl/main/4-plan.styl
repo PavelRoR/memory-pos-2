@@ -1,5 +1,9 @@
 #plan
 	padding 80px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
 .day
 	border-radius: 5px
 	background-color #fff
@@ -12,17 +16,35 @@
 		background-repeat no-repeat
 		background-position: right -100px  center
 		background-size: auto 100%
+		@media screen and (max-width 991px)
+			padding 300px 30px 30px
+			background-position: top 30px center
+			background-size: auto 240px
+		@media screen and (max-width 386px)
+			padding 200px 20px 30px
+			background-position: top center
+			background-size: auto 180px
 	&-2
 		padding 35px 50px 60px 500px
 		background-image: url(../img/images/day-2.png)
 		background-repeat no-repeat
 		background-position: left 30px center
 		margin 20px auto 40px
+		@media screen and (max-width 991px)
+			padding 300px 30px 30px
+			background-position: top 30px center
+			background-size: auto 240px
+		@media screen and (max-width 386px)
+			padding 230px 20px 30px
+			background-position: top 30px center
+			background-size: auto 180px
 	&-title
 		font-size: 25px
 		font-weight: bold
 		text-transform uppercase
 		margin-bottom: 20px
+		@media screen and (max-width 560px)
+			font-size: 22px
 	&-bonus
 		margin-top: 30px
 		padding-left: 70px
@@ -30,3 +52,8 @@
 		background-repeat no-repeat
 		background-position: left center
 		font-weight: bold
+		@media screen and (max-width 991px)
+			background-size auto 50px
+			background-position: top left
+		@media screen and (max-width 386px)
+			padding 70px 0 0

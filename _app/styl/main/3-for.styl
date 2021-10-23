@@ -5,6 +5,10 @@
 	background-repeat no-repeat
 	background-position: center
 	background-size contain
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
 .for-item
 	display table
 	width 100%
@@ -14,9 +18,22 @@
 	background-color: rgba(#fff, .5)
 	padding 45px
 	min-height 174px
+	@media screen and (max-width 1199px)
+		min-height 220px
+	@media screen and (max-width 991px)
+		text-align center
+	@media screen and (max-width 560px)
+		min-height 100px
+		padding 30px 20px
 	&-text
 		display table-cell
 		vertical-align middle
 		font-size: 20px
+		@media screen and (max-width 560px)
+			font-size: 20px
 .button-for
 	margin-top: 75px
+	@media screen and (max-width 1199px)
+		margin-top: 100px
+	@media screen and (max-width 991px)
+		margin-top: 50px
