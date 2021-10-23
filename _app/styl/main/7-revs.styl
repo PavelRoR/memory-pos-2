@@ -1,0 +1,38 @@
+.video-wrapper-rev
+	background-color #000
+	margin-bottom: 30px
+.yt-button
+	position absolute
+	cursor pointer
+	left: calc(50% - 34px);
+	top: calc(50% - 24px);
+	&:before
+		content: ''
+		display block
+		position: absolute;
+		// left: calc(50% - 34px);
+		// top: calc(50% - 124px);
+		width: 68px;
+		height: 48px;
+		border-radius 7px
+		background-color: rgba(0,0,0,.7)
+		transition: all .15s ease
+		z-index 68
+		@media screen and (max-width 560px)
+			background-color: #FF0000
+	&:hover
+		&:before
+			background-color: #FF0000
+	&:after
+		content: ''
+		display block
+		position absolute
+		border: 10px solid transparent;
+		border-left: 18px solid #fff
+		width 10px
+		height 10px
+		// left: calc(50% - 8px);
+		// top: calc(50% - 110px);
+		left: 27px
+		top: 15px
+		z-index 70
