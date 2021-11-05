@@ -1,0 +1,37 @@
+-var path = '../';
+-var head_url = 'https://isakov.mastervision.su/memory-capabilities-2/workbook/';
+-var head_title = 'Скачайте рабочие тетради, кликнув по кнопке ниже';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var noref = true;
+-var ah = true;
+-var ak = true;
+-var footer_title = true;
+
+mixin b(cl, href, p, target, id)
+	a.button(class=cl href!=href target=target id=id)=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)=h3
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			section#main
+				.container
+					include pug/base/1-header
+					+imgs('main-img main-img-1', 'img/images/promo-main-1.png', 'Ораньжевый круг')
+					//- +imgs('main-img main-img-2', 'img/images/promo-main-2.png', 'Ораньжевый круг')
+					.content
+						h1.main-title-workbook Скачайте рабочие тетради, кликнув по кнопке ниже
+						+b('', 'https://drive.google.com/drive/folders/1anmtrUWqD15KjoXpKP7LfeEtYqN7VxMk?usp=sharing', 'Скачать')
+		include pug/base/2-footer
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

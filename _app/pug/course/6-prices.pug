@@ -1,0 +1,43 @@
+mixin pP(off, n, name, cost, link)
+	.package(class='package-'+n)
+		.package-head
+			.package-head-title
+				small пакет
+				=name
+		.package-body
+			p.cost Стоимость:
+				span=cost
+			+b('', link, 'Выбрать', '_blank')
+mixin pp(off, n, name, cost, link)
+	if !off
+		.col-md-4
+			+pP(off, n, name, cost, link)
+	else
+		.col-md-4.col-md-offset-2
+			+pP(off, n, name, cost, link)
+
+section#prices
+	.container
+		+gt('',' Выберите свой вариант участия')
+		.row
+			+pp('','1', '«ЗАПОМИНАНИЕ ИНОСТРАННЫХ СЛОВ»', '4 400р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5788&clean=true&lg=ru')
+			+pp('','2', '«ЗАПОМИНАНИЕ ЧИСЕЛ»', '4 400р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5791&clean=true&lg=ru')
+			+pp('','3', '«ЗАПОМИНАНИЕ ПОСЛЕДОВАТЕЛЬНОСТЕЙ»', '4 400р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5794&clean=true&lg=ru')
+		.row
+			+pp('','4', '«ГЕОГРАФИЯ»', '4 900р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5797&clean=true&lg=ru')
+			+pp('','5', '«ЗАПОМИНАНИЕ ИМЁН И ЛИЦ»', '3 900р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5800&clean=true&lg=ru')
+			+pp('','6', '«РАБОТА С ТЕКСТАМИ»', '5 900р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5803&clean=true&lg=ru')
+		.row
+			+pp('off','7', '«АНГЛИЙСКИЙ ДЛЯ ТЕХ, У КОГО МАЛО ВРЕМЕНИ»', '5 900р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5806&clean=true&lg=ru')
+			+pp('','8', '«ЗАПОМИНАНИЕ ПРАВОПИСАНИЯ СЛОВ»', '3 400р.', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5809&clean=true&lg=ru')
+		.prepayment
+			h4.prepayment-title Акция!
+			p.prepayment-text Оплачивайте 
+				span 500р.
+				|, бонусом получаете ещё 
+				span 500р.
+				| 
+				br
+				| На счет падает 
+				span 1 000р.
+			+b('', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5812&clean=true&lg=ru', 'Оплатить 500р.', '_blank')
